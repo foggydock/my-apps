@@ -1,0 +1,179 @@
+/* 色や余白の「決めごと」をここにまとめる。
+   --bg のような名前を付けておくと、あとから一箇所直すだけで全体が変わる。 */
+:root {
+  --bg: #f7f6f3;
+  --card: #fff;
+  --ink: #2c2a26;
+  --sub: #78736b;
+  --line: #e6e2db;
+  --accent: #c06b3e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 端末がダークモードのときはこちらの色に差し替わる */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17161a;
+    --card: #221f26;
+    --ink: #ece9e4;
+    --sub: #9b948c;
+    --line: #332f38;
+    --accent: #e08b5c;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin: 0 0 6px;
+  letter-spacing: 0.02em;
+}
+
+.lead {
+  color: var(--sub);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ── 絞り込みボタン ── */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 26px;
+}
+
+.filters button {
+  font: inherit;
+  font-size: 0.83rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--sub);
+  transition: 0.15s;
+}
+
+.filters button:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+/* 今えらばれているボタンだけ色が付く */
+.filters button[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── カード ── */
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 18px 15px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.card h2 {
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emoji {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.lock {
+  font-size: 0.8rem;
+  opacity: 0.55;
+}
+
+.desc {
+  font-size: 0.86rem;
+  color: var(--sub);
+  margin: 0 0 14px;
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.74rem;
+  color: var(--sub);
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.tag {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.upd {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* 1週間以内に触ったものは目立たせる */
+.upd.fresh {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 44px;
+  font-size: 0.78rem;
+  color: var(--sub);
+  text-align: center;
+}
+
+footer a {
+  color: var(--sub);
+}

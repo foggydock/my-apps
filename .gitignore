@@ -1,0 +1,13 @@
+# 部品置き場。巨大なので絶対に上げない（npm install でいつでも作り直せる）
+/node_modules
+
+# ビルドででき上がるもの
+/.next
+/out
+
+# 手元だけの設定
+.env*.local
+.DS_Store
+
+# 最初に作った単一HTML版（記念に残すだけ。公開はしない）
+/prototype.html
