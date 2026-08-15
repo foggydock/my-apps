@@ -68,6 +68,20 @@ export const APPS = [
     locked: true,
   },
   {
+    repo: 'jogging-log',
+    name: 'ジョギングログ',
+    emoji: '🏃',
+    tag: '記録',
+    desc: '走った記録と、走る理由をためて振り返るアプリ。',
+  },
+  {
+    repo: 'expert-log',
+    name: '有識者リスト作成ツール',
+    emoji: '🎙️',
+    tag: '学ぶ',
+    desc: 'ポッドキャストの文字起こしから、AIが登場人物や専門家を抜き出してリスト化。',
+  },
+  {
     repo: 'my-mentor',
     name: 'メンター',
     emoji: '🌱',
@@ -81,6 +95,21 @@ export const APPS = [
     emoji: '🎪',
     tag: '暮らし',
     desc: 'キッザニア系施設カンドゥーの当日用。時間割・お仕事図鑑・メモを1画面に。',
+  },
+  {
+    repo: 'stamp-calendar',
+    name: 'もくひょうスタンプカレンダー',
+    emoji: '⭐',
+    tag: '暮らし',
+    desc: '子ども向けの目標達成アプリ。カレンダー×スタンプ×ごほうびで続ける力を後押し。',
+  },
+  {
+    repo: 'care-mitsu',
+    name: 'ケアミツー',
+    emoji: '🌸',
+    tag: '暮らし',
+    desc: '生理周期を記録して、体調の波を夫婦で見守るアプリ。',
+    locked: true,
   },
   {
     repo: 'family-othello',
