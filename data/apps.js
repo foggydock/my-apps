@@ -1,11 +1,13 @@
 // ここがこのサイトの「台帳」です。
 // アプリを増やしたら、この配列に1行足すだけで一覧に出ます。
 //
-//   repo  : GitHub のリポジトリ名。リンク先と最終更新日の取得に使う
+//   repo  : GitHub のリポジトリ名。最終更新日の取得と、リンク先の既定値に使う
 //   name  : 表示する名前
 //   emoji : カードの頭に出る絵文字
 //   tag   : 絞り込みボタンのグループ。新しい言葉を書けばボタンも自動で増える
 //   desc  : 一言説明
+//   url   : 省略可。GitHub Pages 以外（Cloudflare Pages など）で公開している場合だけ書く。
+//           書かなければ既定で https://USER.github.io/repo/ になる
 
 export const USER = 'foggydock';
 

@@ -17,7 +17,7 @@ export default function AppCard({ app, updatedAt }) {
   const isFresh = updatedAt && Date.now() - new Date(updatedAt) < 7 * 86400000;
 
   return (
-    <a className="card" href={`https://${USER}.github.io/${app.repo}/`}>
+    <a className="card" href={app.url || `https://${USER}.github.io/${app.repo}/`}>
       <h2>
         <span className="emoji">{app.emoji}</span>
         {app.name}
