@@ -92,13 +92,6 @@ export const APPS = [
     locked: true,
   },
   {
-    repo: 'kandu',
-    name: 'カンドゥー作戦ボード',
-    emoji: '🎪',
-    tag: '暮らし',
-    desc: 'キッザニア系施設カンドゥーの当日用。時間割・お仕事図鑑・メモを1画面に。',
-  },
-  {
     repo: 'stamp-calendar',
     name: 'もくひょうスタンプカレンダー',
     emoji: '⭐',
