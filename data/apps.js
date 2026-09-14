@@ -25,6 +25,7 @@ export const APPS = [
     emoji: '☁️',
     tag: '学ぶ',
     desc: 'クラウドプラクティショナー対策。通勤中にオフラインで解ける忘却曲線つき問題集。',
+    url: 'https://aws-quiz-3wi.pages.dev/',
   },
   {
     repo: 'rekishi-log',
@@ -32,6 +33,7 @@ export const APPS = [
     emoji: '📜',
     tag: '学ぶ',
     desc: 'ポッドキャストの文字起こしを貼るとAIが振り分け、年表とテーマが日々育つ。',
+    url: 'https://rekishi-log.pages.dev/',
   },
   {
     repo: 'satto-task',
@@ -75,6 +77,7 @@ export const APPS = [
     emoji: '🏃',
     tag: '記録',
     desc: '走った記録と、走る理由をためて振り返るアプリ。',
+    url: 'https://jogging-log.pages.dev/',
   },
   {
     repo: 'expert-log',
@@ -82,6 +85,7 @@ export const APPS = [
     emoji: '🎙️',
     tag: '学ぶ',
     desc: 'ポッドキャストの文字起こしから、AIが登場人物や専門家を抜き出してリスト化。',
+    url: 'https://expert-log.pages.dev/',
   },
   {
     repo: 'my-mentor',
