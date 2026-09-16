@@ -62,6 +62,7 @@ export const APPS = [
     emoji: '🎵',
     tag: '記録',
     desc: 'いいなと思った曲のURLを貼るだけ。曲名・歌手・カバー画像が自動で入る。',
+    url: 'https://my-music-log.pages.dev/',
   },
   {
     repo: 'newspaper-ads',
