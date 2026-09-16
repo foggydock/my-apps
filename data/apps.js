@@ -117,6 +117,7 @@ export const APPS = [
     emoji: '⚫',
     tag: 'あそび',
     desc: '家族の写真が石になるオセロ。家族で対戦できる。',
+    url: 'https://family-othello.pages.dev/',
   },
   {
     repo: 'diamond-game',
