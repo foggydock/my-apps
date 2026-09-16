@@ -128,4 +128,12 @@ export const APPS = [
     tag: 'あそび',
     desc: '昔ながらのダイヤモンドゲームをブラウザで。',
   },
+  {
+    repo: 'doubutsu-shogi',
+    name: 'どうぶつしょうぎ',
+    emoji: '🦁',
+    tag: 'あそび',
+    desc: 'ひとりで（強さ3段階）／ふたりで遊べるどうぶつしょうぎ。オフライン対応。',
+    url: 'https://doubutsu-shogi.pages.dev/',
+  },
 ];
