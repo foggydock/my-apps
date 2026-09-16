@@ -49,6 +49,7 @@ export const APPS = [
     emoji: '🔁',
     tag: '記録',
     desc: '自分で決めた周期の定期作業を管理。次にやる日が近い順に並ぶ。',
+    url: 'https://my-routine-92c.pages.dev/',
   },
   {
     repo: 'place-log',
