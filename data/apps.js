@@ -41,6 +41,7 @@ export const APPS = [
     emoji: '✅',
     tag: '記録',
     desc: 'スマホでサッと開いて書けるだけのタスク管理。余計な機能を足さない。',
+    url: 'https://satto-task.pages.dev/',
   },
   {
     repo: 'my-routine',
