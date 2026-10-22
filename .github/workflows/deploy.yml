@@ -31,6 +31,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npm test
+
       - run: npm run build
 
       # _next という名前のフォルダを GitHub Pages に無視させないための目印

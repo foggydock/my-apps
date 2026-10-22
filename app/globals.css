@@ -90,7 +90,7 @@ h1 {
 .grid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
 }
 
 .card {
@@ -177,3 +177,13 @@ footer {
 footer a {
   color: var(--sub);
 }
+
+.search { margin-top: 22px; }
+.search label { display: block; font-size: 0.86rem; margin-bottom: 6px; }
+.search input { width: 100%; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.result-count, .update-status { color: var(--sub); font-size: 0.83rem; }
+.update-status { margin-bottom: 12px; }
+.card { min-width: 0; overflow-wrap: anywhere; }
+.meta { flex-wrap: wrap; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .card, .filters button { transition: none; } .card:hover { transform: none; } }
