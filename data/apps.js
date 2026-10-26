@@ -91,14 +91,6 @@ export const APPS = [
     url: 'https://expert-log.pages.dev/',
   },
   {
-    repo: 'my-mentor',
-    name: 'メンター',
-    emoji: '🌱',
-    tag: '暮らし',
-    desc: '話した内容を書き起こし、直近数日を踏まえてAIが助言をくれる。朝・通勤前・帰宅の3場面。',
-    locked: true,
-  },
-  {
     repo: 'stamp-calendar',
     name: 'もくひょうスタンプカレンダー',
     emoji: '⭐',
